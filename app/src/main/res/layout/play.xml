@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/kobe"
+    android:id="@+id/play"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:id="@+id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/play" />
+    <Button
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:id="@+id/btnNext"
+        android:layout_toRightOf="@id/btnStart"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/next"/>
+    <Button
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:id="@+id/btnLast"
+        android:layout_toLeftOf="@id/btnStart"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/last"/>
+    <Button
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:id="@+id/btnPlayMode"
+        android:background="@drawable/loop"
+        android:layout_above="@id/btnStart"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPlaying"
+        android:textColor="#00008b"/>
+    <SeekBar
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btnPlayMode"
+        android:id="@+id/seekbar"/>
+
+</RelativeLayout>
